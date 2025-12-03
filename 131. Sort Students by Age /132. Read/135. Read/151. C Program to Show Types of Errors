@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+    printf("Types of Errors:\n");
+    printf("1. Syntax Error\n");
+    printf("2. Runtime Error\n");
+    printf("3. Logical Error\n");
+
+    return 0;
+}
