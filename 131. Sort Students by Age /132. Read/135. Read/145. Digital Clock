@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <time.h>
+int main(){
+while(1){
+time_t t=time(NULL);
+printf("%s", ctime(&t));
+sleep(1);
+}
+}
