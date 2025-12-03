@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main(){
+FILE *f = tmpfile();
+fputs("Hello", f);
+printf("Temporary file created");
+return 0;
+}
