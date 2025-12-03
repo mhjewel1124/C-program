@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main(){
+FILE *s=fopen("a.txt","r"), *d=fopen("b.txt","w");
+char c;
+while((c=fgetc(s))!=EOF) fputc(c, d);
+return 0;
+}
