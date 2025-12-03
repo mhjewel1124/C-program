@@ -1,0 +1,12 @@
+#include <stdio.h>
+void rev(char s[]){
+    if(*s){
+        rev(s+1);
+        printf("%c", *s);
+    }
+}
+int main(){
+    char s[100];
+    gets(s);
+    rev(s);
+}
