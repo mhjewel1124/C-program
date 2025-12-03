@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main(){
+FILE *f1=fopen("a.txt","r"), *f2=fopen("b.txt","r");
+char c1, c2;
+while((c1=fgetc(f1))!=EOF && (c2=fgetc(f2))!=EOF)
+if(c1!=c2){ printf("Mismatch"); return 0; }
+printf("Same");
+return 0;
+}
