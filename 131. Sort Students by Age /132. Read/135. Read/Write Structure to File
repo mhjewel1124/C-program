@@ -1,0 +1,12 @@
+#include <stdio.h>
+struct S{ char name[20]; int age; };
+int main(){
+struct S s = {"A", 20}, r;
+FILE *f = fopen("data.bin", "wb");
+fwrite(&s, sizeof(s),1,f);
+fclose(f);
+f = fopen("data.bin","rb");
+fread(&r,sizeof(r),1,f);
+printf("%s %d", r.name, r.age);
+return 0;
+}
