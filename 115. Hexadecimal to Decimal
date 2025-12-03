@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+int main(){
+    char hex[20];
+    int dec=0, base=1;
+    gets(hex);
+
+    for(int i=strlen(hex)-1; i>=0; i--){
+        char c = toupper(hex[i]);
+        int v = (c>='A') ? c-'A'+10 : c-'0';
+        dec += v * base;
+        base *= 16;
+    }
+
+    printf("%d", dec);
+}
