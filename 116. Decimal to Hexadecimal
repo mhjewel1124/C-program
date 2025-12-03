@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(){
+    int n;
+    scanf("%d",&n);
+
+    char hex[20];
+    int i=0;
+
+    while(n>0){
+        int r=n%16;
+        hex[i++] = (r<10) ? r+'0' : r-10+'A';
+        n/=16;
+    }
+
+    hex[i]='\0';
+
+    strrev(hex);
+    printf("%s", hex);
+}
