@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int hour;
+    printf("Enter hours: ");
+    scanf("%d", &hour);
+
+    int minutes = hour * 60;
+    int seconds = hour * 3600;
+
+    printf("Minutes = %d\n", minutes);
+    printf("Seconds = %d\n", seconds);
+
+    return 0;
+}
