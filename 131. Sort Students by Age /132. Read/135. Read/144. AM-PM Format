@@ -1,0 +1,8 @@
+#include <stdio.h>
+#include <time.h>
+int main(){
+time_t t=time(NULL);
+struct tm *tm=localtime(&t);
+int h=tm->tm_hour;
+printf("%02d:%02d %s", h%12, tm->tm_min, h>=12?"PM":"AM");
+}
