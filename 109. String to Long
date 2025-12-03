@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    char s[100];
+    gets(s);
+    long x = atol(s);
+    printf("%ld", x);
+}
