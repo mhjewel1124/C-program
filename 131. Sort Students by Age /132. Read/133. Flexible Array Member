@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+struct A { int n; int arr[]; };
+int main(){
+int n=5;
+struct A *p = malloc(sizeof(struct A)+n*sizeof(int));
+p->n = n;
+for(int i=0;i<n;i++) p->arr[i] = i+1;
+for(int i=0;i<n;i++) printf("%d ", p->arr[i]);
+return 0;
+}
