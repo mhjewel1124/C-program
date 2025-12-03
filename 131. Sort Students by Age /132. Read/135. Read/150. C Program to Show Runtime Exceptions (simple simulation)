@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    int a = 10, b = 0;
+
+    printf("Trying to divide by zero (runtime error example):\n");
+    // This will cause runtime error in real execution
+    printf("%d\n", a / b);
+
+    return 0;
+}
