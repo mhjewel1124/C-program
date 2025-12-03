@@ -1,0 +1,9 @@
+#include <stdio.h>
+typedef struct { int r,i; } C;
+C add(C a, C b){ C s; s.r=a.r+b.r; s.i=a.i+b.i; return s; }
+int main(){
+C x={2,3}, y={4,5}, z;
+z = add(x,y);
+printf("%d + %di", z.r, z.i);
+return 0;
+}
